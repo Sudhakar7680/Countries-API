@@ -1,0 +1,103 @@
+body {
+    
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Light Mode (Default) */
+body {
+    background-color: #ffffff;
+    color: #000000; /* Default text color */
+}
+
+.card-inner-container {
+    background-color: #f8f9fa;
+    color: #000000;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff; /* Change text color to white in dark mode */
+}
+
+.dark-mode .card-inner-container {
+    background-color: #333;
+    color: #ffffff; /* Ensure card text is white */
+}
+
+.navbar.dark-mode {
+    background-color: #333;
+}
+.dark-mode a{
+    color: white;
+}
+
+/* Ensure any headings or other specific elements also have white text */
+.dark-mode h5, .dark-mode p {
+    color: #ffffff;
+}
+.container-fluid {
+    display: flex;
+}
+
+a.navbar-brand {
+    padding: 0px;
+    border-radius: 0px;
+    box-shadow: 0 0 0 0;
+}
+
+
+.container {
+    display: flex;
+    column-gap: 15%;
+}
+
+.details-text {
+    display: flex;
+    flex-direction: column;
+    column-gap: 36px;
+    row-gap: 4px;
+    max-height: 162px;
+    flex-wrap: wrap;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.border-countries {
+    margin-top: 4%;
+}
+a {
+    padding: 1px 16px;
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+    box-shadow: 0 0 4px 0px;
+    margin-inline: 1px;
+    display: inline-block;
+}
+
+@media(max-width: 940px) {
+    .country-details {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 32px;
+        gap: 16px;
+    }
+
+    .details-text {
+        max-height: unset;
+    }
+
+}
+@media(max-width:768px){
+    .container{
+        display: block;
+    }
+    img.logo {
+        width: inherit;
+    }
+    .details-text-container {
+        margin-top: 4%;
+    }
+}

@@ -1,0 +1,60 @@
+body {
+    
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#searchInput {
+    margin-bottom: 20px;
+}
+
+
+.card-inner-container{
+    padding: 10px;
+    margin-top: 37px;
+    border-radius: 10px;
+    border-radius: 8px;
+    box-shadow: rgba(15, 13, 13, 0.434) 0px 3px 8px;
+
+  }
+  .country-title {
+    font-size: 13px;
+    font-weight: 600;
+}
+.image-logo{
+    height: 145px;
+    width: 238px;
+    object-fit: cover;
+}
+
+
+
+/* Light Mode (Default) */
+body {
+    background-color: #ffffff;
+    color: #000000; /* Default text color */
+}
+
+.card-inner-container {
+    background-color: #f8f9fa;
+    color: #000000;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff; /* Change text color to white in dark mode */
+}
+
+.dark-mode .card-inner-container {
+    background-color: #333;
+    color: #ffffff; /* Ensure card text is white */
+}
+
+.navbar.dark-mode {
+    background-color: #333;
+}
+
+/* Ensure any headings or other specific elements also have white text */
+.dark-mode h5, .dark-mode p {
+    color: #ffffff;
+}
